@@ -2,11 +2,25 @@ import {Fragment} from 'react';
 
 function App() {
     const name = "리액트"
+
+    const style = {
+      backgroundColor: 'black',
+      color: 'aqua',
+      fontSize: '48px',
+      fontWeight: 'bold',
+      padding: 16
+    }
+
+    
     return (
       <>
         {name === "리액트" && (
-          <h1>{name} 안녕!</h1>
+          <h1 style={style}>{name} 안녕!</h1>
         )}        
+        <div style={{
+          backgroundColor: "red",
+          height: 100
+        }}></div>
       </>
     );
 }
