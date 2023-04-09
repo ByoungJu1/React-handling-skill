@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
 class MyComponent extends Component {
+  // 이 두가지는 꼭 사용해야하는 것은 아니지만 협업 시 어떤 props가 있는지 쉽게 알수 있다.
   static defaultProps = {
     name: '기본 이름',
   };
