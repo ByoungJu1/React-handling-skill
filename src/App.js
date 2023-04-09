@@ -1,15 +1,11 @@
-import './App.css';
-
-function App() {
-  const name = '리액트';
+import React from 'react';
+import MyComponent from './MyComponent';
+const App = () => {
   return (
-    // 주석
-    <div className="react">
-      {name}
-      {/*주석*/}
-
-      <input />
-    </div>
+    <MyComponent name="React" favoriteNumber={1}>
+      리액트
+    </MyComponent>
   );
-}
+};
+
 export default App;
